@@ -1,3 +1,10 @@
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #363636;
+  --text-color: #ffffff;
+  --hover-effect: all 0.3s ease;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -7,7 +14,7 @@
 
 body {
   padding: 50px 100px;
-  background-color: #363636;
+  background-color: var(--secondary-color);
 }
 
 header {
@@ -19,9 +26,9 @@ header {
 
 .logo {
   font-size: 30px;
-  color: white;
+  color: var(--text-color);
   font-weight: bold;
-  text-shadow: 2px 2px 5px green;
+  text-shadow: 2px 2px 5px var(--primary-color);
 }
 
 .nav-order {
@@ -33,15 +40,15 @@ header {
 }
 
 .nav-order li a {
-  color: white;
+  color: var(--text-color);
   padding-bottom: 5px;
   transition-duration: .3s;
-  border: 2px solid white;
+  border: 2px solid var(--text-color);
   font-size: 20px;
 }
 
 .nav-order li a:hover {
-  border: 2px solid white;
+  border: 2px solid var(--text-color);
 }
 
 .signup {
@@ -49,16 +56,17 @@ header {
   height: 10;
   padding: 10px 15px;
   border-radius: 15px;
-  border: 3px solid green;
-  background-color: white;
-  color: green;
+  border: 3px solid var(--primary-color);
+  background-color: var(--text-color);
+  color: var(--primary-color);
+  cursor: pointer;
   transition: 0.5s ease;
 }
 
 .signup:hover {
-  border: 3px solid white;
-  background-color: green;
-  color: white;
+  border: 3px solid var(--text-color);
+  background-color: var(--primary-color);
+  color: var(--text-color);
 }
 
 .signin {
@@ -66,14 +74,15 @@ header {
   height: 10;
   padding: 10px 15px;
   border-radius: 15px;
-  border: 3px solid white;
-  background-color: green;
-  color: white;
+  border: 3px solid var(--text-color);
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  cursor: pointer;
   transition: 0.5s ease;
 }
 
 .signin:hover {
-  border: 3px solid green;
-  background-color: white;
-  color: green;
+  border: 3px solid var(--primary-color);
+  background-color: var(--text-color);
+  color: var(--primary-color);
 }
